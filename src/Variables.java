@@ -6,6 +6,13 @@ import java.text.NumberFormat;
  *
  */
 public class Variables {
+	
+	
+	
+	public static boolean pregunta (boolean quess){
+		
+		 return false;
+	 }
 
 	public static void main(String[] args) {
 		System.out.println("ejercicio con variables");
@@ -30,6 +37,8 @@ public class Variables {
 		System.out.println("char");
 		char letra = 'a';
 		System.out.println("el caracter es: " + letra);
+		
+		
 		
 		char a ='a';
 		char f ='F';
