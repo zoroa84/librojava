@@ -7,11 +7,22 @@ import java.text.NumberFormat;
  */
 public class Variables {
 	
+	/**
+	 * obtener un simbolo especial en ascii de check o cross
+	 * @param valor :este valor boolean 
+	 * @return :devuelve si es check para true o cross para false
+	 */
 	
-	
-	public static boolean pregunta (boolean quess){
+	public static char dameSimbolo (boolean valor){
 		
-		 return false;
+		boolean boo =valor;
+		
+		char resul= '\u2716';
+		if (valor) {
+			resul = '\u2714';
+		}
+		
+		 return resul;
 	 }
 
 	public static void main(String[] args) {
@@ -27,7 +38,7 @@ public class Variables {
 		System.out.println("reales");
 		float sueldoMesGerman = 1200.25f;
 		float sueldoMesLander = (float)2400.50;
-		System.out.println("german cobra " + NumberFormat.getInstance().format(sueldoMesGerman)  + " € al mes");
+		System.out.println("german cobra " + NumberFormat.getInstance().format(sueldoMesGerman)  + " â‚¬ al mes");
 		
 		
 		System.out.println("booleanas");
@@ -46,7 +57,7 @@ public class Variables {
 		char j ='j';
 		
 		System.out.println("digito   letra   mayus   minus");
-		System.out.println(Character.isDigit(a)+ "    "+  Character.isLetter(a)+"    " +Character.isUpperCase(a)+"   "+Character.isLowerCase(a) +"  a");
+		System.out.println(dameSimbolo(Character.isDigit(a))+ "    "+ dameSimbolo( Character.isLetter(a))+"    " +dameSimbolo(Character.isUpperCase(a))+"   "+dameSimbolo(Character.isLowerCase(a)) +"  a");
 		System.out.println(Character.isDigit(f)+ "    "+  Character.isLetter(f)+"    " +Character.isUpperCase(f)+"    "+Character.isLowerCase(f) +" F");
 		System.out.println(Character.isDigit(tres)+ "    "+  Character.isLetter(tres)+"   " +Character.isUpperCase(tres)+"   "+Character.isLowerCase(tres) +" 3");
 		System.out.println(Character.isDigit(j)+ "    "+  Character.isLetter(j)+"    " +Character.isUpperCase(j)+"   "+Character.isLowerCase(j) +"  j");
