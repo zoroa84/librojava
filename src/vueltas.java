@@ -25,7 +25,7 @@
  * */
 public class vueltas {
 	
-	int dinero[] = new int[12];
+	static float[] dinero = {50.0f,20.0f,10.0f,2.0f,1.0f,0.5f,0.2f,0.1f,0.05f,0.02f,0.01f};
 	static float pagar = 1326.24f;
 	static float pago = 2000.00f;
 	static float devolver = 0.0f;
@@ -34,11 +34,10 @@ public class vueltas {
 	
 		devolver = pago - pagar ;		System.out.println(devolver);
 
-		if(devolver > 0) {
-			while (devolver - 50>0) {
-				dinero[0]++;
-			}
-		}
+	for (int i = 0; i < dinero.length; i++) {
+		
+		
+	}
 
 	}
 
