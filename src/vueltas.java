@@ -25,17 +25,24 @@
  * */
 public class vueltas {
 	
-	static float[] dinero = {50.0f,20.0f,10.0f,2.0f,1.0f,0.5f,0.2f,0.1f,0.05f,0.02f,0.01f};
+	static float[] dinero = {50,20,10,2,1,0.5f,0.2f,0.1f,0.05f,0.02f,0.01f};
+	static int[] vueltas= {0,0,0,0,0,0,0,0,0,0,0,0};
 	static float pagar = 1326.24f;
 	static float pago = 2000.00f;
 	static float devolver = 0.0f;
+	static int importe = 0;
 
 	public static void main(String[] args) {
 	
-		devolver = pago - pagar ;		System.out.println(devolver);
+		devolver = pago - pagar ;
 
 	for (int i = 0; i < dinero.length; i++) {
-		
+		if (devolver >= dinero[i]) {
+			importe = (int) (devolver / dinero[i]);
+			System.out.println(importe);
+			devolver= devolver - importe;
+			importe=0;
+		}
 		
 	}
 
