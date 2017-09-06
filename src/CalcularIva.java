@@ -11,6 +11,10 @@ public class CalcularIva {
 		float importe = sc.nextFloat();
 		
 		System.out.println("iva repercutido="+importe*0.21);
+		
+
+		
+
 
 	}
 
