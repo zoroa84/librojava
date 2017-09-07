@@ -68,4 +68,12 @@ public class Participante {
 		return "https://github.com/" + this.usuarioGit;
 	}
 
+	public String toString() {
+		return "Participante [nombre=" + this.nombre + ", usuarioGit=" + this.usuarioGit + ", email=" + this.email + ", trabajador="
+				+ this.trabajador + "]";
+	}
+
+	
+	
+	
 }
