@@ -13,7 +13,9 @@ public class Participante {
 
 	public Participante() {
 		super();
-		// TODO implementar
+		this.nombre="";
+		this.usuarioGit="";
+		this.email ="";
 	}
 
 	public Participante(String nombre, String usuarioGit) {

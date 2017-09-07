@@ -2,7 +2,14 @@ import junit.framework.TestCase;
 
 public class ParticipantesTest extends TestCase {
 	
-	
+	public void testConstructorVacio() {
+		Participante p = new Participante();
+		assertEquals("", p.getNombre());
+		assertEquals("", p.getUsuarioGit());
+		assertEquals("", p.getEmail());
+		assertFalse( p.isTrabajador());
+		assertEquals("https://github.com/", p.getLinkGitHub());
+	}
 	
 	public void testConstructor() {
 		

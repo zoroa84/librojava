@@ -1,6 +1,8 @@
 
 public class TocaLeer {
 
+	
+	
 	static String [] alumnos = {"Arkaitz","Erlantz","Fran","cristian","leire","mikel","josu","alberto","jon","naiara","lander","german"};
 	/**
 	 * @param args
