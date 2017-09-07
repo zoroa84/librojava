@@ -3,8 +3,10 @@ public class TocaLeer {
 
 	
 	
-	static String [] alumnos = {"Arkaitz","Erlantz","Fran","cristian","leire","mikel","josu","alberto","jon","naiara","lander","german"};
-	/**
+	static String [] alumnos = {"Arkaitz","Erlantz","Fran","cristian","erlantz2","leire","mikel","josu","alberto","jon","naiara","lander","yeray","german"};
+	static String [] git = {"arkaitzgl","erliglesias","FranPerez92","CristianVar","-Erlantzcabrejas ","LeireBustin","Katakume","amsoria91","(alarconsolis)","(naiaramateos)","LanderAB","LordBlacKhiin"};
+	/*
+	 * *
 	 * @param args
 	 */
 	public static void main(String[] args) {
