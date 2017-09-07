@@ -12,15 +12,12 @@ public class JuegoAcertar {
 
 		System.out.println("introduzca el numero entero que quieres adivinar");
 		intro = pedir.nextInt();
-
 		do {
 			if (numeroAleatorio == intro) {
 				System.out.println("eres un figura acertaste");
 				acertar1 = true;
-
 				// break;
 			} else {
-
 				System.out.println("eres un manta no acertaste");
 				pedir = new Scanner(System.in);
 				intro = pedir.nextInt();
@@ -28,11 +25,9 @@ public class JuegoAcertar {
 				if (contador >= 3) {
 					System.out.println("GAME OVER");
 				}
-
 			}
 		} while ((contador <= 3) && (acertar1 = false));
 
 		pedir.close();
 	}
-
 }
