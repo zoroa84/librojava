@@ -1,7 +1,9 @@
 import junit.framework.TestCase;
 
 public class ParticipantesTest extends TestCase {
-
+	
+	
+	
 	public void testConstructor() {
 		
 		Participante p1 = new Participante("mikel", "zoroa84");

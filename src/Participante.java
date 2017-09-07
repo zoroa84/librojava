@@ -13,7 +13,7 @@ public class Participante {
 
 	public Participante() {
 		super();
-		// TODO Auto-generated constructor stub
+		// TODO implementar
 	}
 
 	public Participante(String nombre, String usuarioGit) {
