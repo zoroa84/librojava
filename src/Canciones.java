@@ -44,7 +44,6 @@ public class Canciones {
 
 	// otros metodos
 	public String toString() {
-		return "Canciones [nombre de la cancion = " + nombre + ", -> autor = " + autor + ", -> duracion = " + duracion
-				+ "]";
+		return "nombre = " + nombre + ", -> autor = " + autor + ", -> duracion = " + duracion;
 	}
 }
