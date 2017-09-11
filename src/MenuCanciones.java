@@ -24,7 +24,6 @@ public class MenuCanciones {
 					opcion = (int) sc.nextFloat();
 				} catch (Exception e) {
 					System.out.println("solo deve elejir un numero 1-4, no letras");
-
 				}
 			} while (opcioncorrecta != true);
 			switch (opcion) {
