@@ -1,6 +1,9 @@
+package com.ipartek.formacion.javalibro.ejercicios;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
+
+import com.ipartek.formacion.javalibro.pojo.Canciones;
 
 public class MenuCanciones {
 

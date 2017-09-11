@@ -1,3 +1,4 @@
+package com.ipartek.formacion.javalibro.ejercicios;
 /**
  * las variables primiticas se pasan por valor las variables de clases se pasan
  * por referencia

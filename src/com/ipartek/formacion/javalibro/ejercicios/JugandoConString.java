@@ -1,3 +1,4 @@
+package com.ipartek.formacion.javalibro.ejercicios;
 public class JugandoConString {
 
 	public static void main(String[] args) {
