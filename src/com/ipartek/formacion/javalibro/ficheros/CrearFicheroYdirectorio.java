@@ -21,14 +21,16 @@ import java.util.Scanner;
  */
 public class CrearFicheroYdirectorio {
 	public static void main(String[] args) {
+		
 		File fc = null;
 		FileWriter fc1 = null;
+		Scanner sc =null;
 		try {
 
-			Scanner sc = new Scanner(System.in);
+			sc = new Scanner(System.in);
 			System.out.println("inroduce el nombre de la carpeta");
 			String carpeta = sc.nextLine();
-			System.out.println("introduce el nombre del archivo");
+			System.out.println("introduce el nombre del archivo sin extension(.txt)");
 			String archivo = sc.nextLine();
 			System.out.println("introduzca el texto que desea introducir en el documento");
 			String texto = sc.nextLine();
