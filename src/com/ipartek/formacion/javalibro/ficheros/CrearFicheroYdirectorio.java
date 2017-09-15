@@ -26,7 +26,7 @@ public class CrearFicheroYdirectorio {
 		FileWriter fc1 = null;
 		Scanner sc =null;
 		try {
-
+			
 			sc = new Scanner(System.in);
 			System.out.println("inroduce el nombre de la carpeta");
 			String carpeta = sc.nextLine();
@@ -35,11 +35,14 @@ public class CrearFicheroYdirectorio {
 			System.out.println("introduzca el texto que desea introducir en el documento");
 			String texto = sc.nextLine();
 
+			//crear carpeta
+			//si usamos "new filewriter( file.getAbsoluteFile())" para que no machaque el archivo
 			fc = new File("c:\\desarrollo\\" + carpeta + "");
 			fc.mkdirs();
-
+			//crear fichero
 			fc1 = new FileWriter("c:\\desarrollo\\" + carpeta + "\\" + archivo + ".txt");
-			fc1.write(texto);
+			//escribir en el fichero
+			fc1.write(texto+"\n\r");  //\r retorno de carro  \n salto de linera
 			sc.close();
 		} catch (IOException e) {
 
