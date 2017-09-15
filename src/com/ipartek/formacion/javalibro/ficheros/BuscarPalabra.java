@@ -24,14 +24,17 @@ public class BuscarPalabra {
 		String palabra = "osobuko";
 		String linea = "";
 		File[] ficheros = directorio.listFiles();
+		FileReader fr =null;
+		BufferedReader br = null;
+		
 		for (int x = 0; x < ficheros.length; x++) {
 			// System.out.println(separador + ficheros[x].getName());
 			if (ficheros[x].isDirectory()) {
 				listarDirectorio(ficheros[x], separador + separador);
 			} else {
 				try {
-					FileReader fr = new FileReader(directorio);
-					BufferedReader br = new BufferedReader(fr);
+					fr = new FileReader(directorio);
+					br = new BufferedReader(fr);
 					while (linea != null) {
 						int buscar = linea.indexOf(palabra);
 						if (linea.equals(palabra)) {
@@ -45,7 +48,7 @@ public class BuscarPalabra {
 				} catch (Exception e) {
 					// TODO: handle exception
 				}finally {
-					br.close();
+					br.close();// inicializar a nul y se quita esto
 					fr.close();
 				}
 
