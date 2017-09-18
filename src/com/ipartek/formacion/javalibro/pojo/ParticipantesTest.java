@@ -4,6 +4,16 @@ import com.ipartek.formacion.javalibro.excepciones.ParticipanteException;
 import junit.framework.TestCase;
 
 public class ParticipantesTest extends TestCase {
+	
+	public void testEquals() {
+		Participante p1 =new Participante();
+		Participante p2 =new Participante();
+		
+		p1.setNombre("manolo");
+		p2.setNombre("manolo");
+		
+		assertEquals("no son iguales",p1, p2);
+	}
 
 	public void testConstructorVacio() {
 		Participante p = new Participante();
@@ -56,5 +66,7 @@ public class ParticipantesTest extends TestCase {
 			assertEquals(ParticipanteException.EXCEPTION_MAYOR_CIEN, e.getMessage());
 		}
 	}
+	
+	 
 
 }
