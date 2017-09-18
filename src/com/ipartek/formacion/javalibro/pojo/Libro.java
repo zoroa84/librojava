@@ -45,6 +45,12 @@ public class Libro implements Imprimible, Vendible {
 	public void setPaginas(int paginas) {		
 		this.paginas = ( paginas > 0 ) ? paginas : 0;
 	}
+	/*
+	  Se puede acceder desde la propia clase, desde el mismo "package" y desde cualquier "subclase"(clase hija), pero no se puede ver desde una clase de otro "package". 
+	 */
+	protected void metodoProtegido() {
+		System.out.println("soy un metodo protegido");
+	}
 
 	@Override
 	public String toString() {

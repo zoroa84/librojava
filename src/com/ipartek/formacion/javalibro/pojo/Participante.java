@@ -18,6 +18,8 @@ public class Participante implements Imprimible {
 		return result;
 	}
 
+	
+	
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)

@@ -13,10 +13,14 @@ public class LibrosRecomendados  {
 		l.setAutor("gabriel garcia");
 		l.setPaginas(303);
 		
+		l.metodoProtegido();
+		
 		LibroElectronico le =new LibroElectronico("años salvajes");
 		le.setAutor("william finnegan");
 		le.setTamanyo(23);
 		le.setPaginas(523);
+		
+		le.metodoProtegido();
 		
 		LibroPapel lp = new LibroPapel("papillon");
 		lp.setAutor("henri caharriere");
