@@ -3,6 +3,7 @@ package com.ipartek.formacion.javalibro.ficheros;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 
 import javax.print.DocFlavor.STRING;
@@ -46,10 +47,16 @@ public class BuscarPalabra {
 					}
 
 				} catch (Exception e) {
-					// TODO: handle exception
+					e.printStackTrace();
 				}finally {
-					br.close();// inicializar a nul y se quita esto
-					fr.close();
+					try {
+						br.close();
+						fr.close();
+					} catch (IOException e) {
+						
+						e.printStackTrace();
+					}
+					
 				}
 
 			}
