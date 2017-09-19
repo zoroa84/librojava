@@ -7,8 +7,8 @@ public class Persona {
 	private String apellido2;
 	private String edad;
 	private String email;
-	private String puesto;
 	private String dni;
+	private String puesto;
 
 	//constructor	
 	
@@ -20,8 +20,8 @@ public class Persona {
 		this.apellido2 = apellido2;
 		this.edad = edad;
 		this.email = email;
-		this.puesto = puesto;
 		this.dni = dni;
+		this.puesto = puesto;
 	}
 	
 	//getter y seters
@@ -87,7 +87,7 @@ public class Persona {
 	@Override
 	public String toString() {
 		return "Persona [nombre=" + nombre + ", apellido1=" + apellido1 + ", apellido2=" + apellido2 + ", edad=" + edad
-				+ ", email=" + email + ", puesto=" + puesto + ", dni=" + dni + "]";
+				+ ", email=" + email +  ", dni=" + dni + ", puesto=" + puesto +"]";
 	}
 
 }
