@@ -1,8 +1,15 @@
 package com.ipartek.formacion.javalibro.pojo;
 
-public class LibroPapel extends Libro {
+import com.ipartek.formacion.javalibro.pojo.interfaces.Vendible;
+
+public class LibroPapel extends Libro implements Vendible {
 	
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 3161618149480590806L;
+
 	private boolean tapaBlanda;
 	
 	public static final float COSTE_TAPA_DURA = 1.5f;
