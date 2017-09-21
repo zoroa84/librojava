@@ -38,7 +38,10 @@ public class GuardarPersonasArraylist {
 			
 			while ((lineas = br.readLine()) != null) {
 				String[] partes = lineas.split(",");
+				System.out.println(lineas);
 				if (partes.length == 7) {
+					
+					if(Integer.parseInt("18") >Integer.parseInt(partes[3]) ) {}
 					// si es igual a 7 a bueno.txt	
 					bw1.write(lineas+"\r\n");
 					bw1.flush();
