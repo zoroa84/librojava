@@ -1,4 +1,5 @@
 package com.ipartek.formacion.javalibro.pojo;
+
 import com.ipartek.formacion.javalibro.excepciones.PersonaException;
 import com.ipartek.formacion.javalibro.utilidades.Validaciones;
 
@@ -16,7 +17,7 @@ public class Persona {
 	private int edad;
 	
 	
-	public Persona(String nombre, String apellido1, String apellido2, String email, String dni, String rol, String edad) throws PersonaException {
+	public Persona(String nombre, String apellido1, String apellido2, String email, String dni, String rol, String partes) throws PersonaException {
 		super();
 		this.nombre = nombre;
 		this.apellido1 = apellido1;
@@ -24,9 +25,11 @@ public class Persona {
 		this.email = email;
 		this.dni = dni;
 		this.rol = rol;
-		//this.edad = edad;
-		 Integer.toString(setEdad(edad));
+		
 	}
+
+
+
 
 
 	public String getNombre() {
@@ -79,13 +82,6 @@ public class Persona {
 
 
 	public void setDni(String dni) {
-		if ( !Validaciones.dni(dni) ) {
-			try {
-				throw new PersonaException(PersonaException.MSG_DNI_ERROR);
-			} catch (PersonaException e) {
-				e.printStackTrace();
-			}
-		}	
 		this.dni = dni;
 	}
 

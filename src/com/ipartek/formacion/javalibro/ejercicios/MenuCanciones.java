@@ -3,11 +3,11 @@ import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import com.ipartek.formacion.javalibro.pojo.Canciones;
+import com.ipartek.formacion.javalibro.pojo.Cancion;
 
 public class MenuCanciones {
 
-	public static ArrayList<Canciones> song = new ArrayList<Canciones>();
+	public static ArrayList<Cancion> song = new ArrayList<Cancion>();
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -51,7 +51,7 @@ public class MenuCanciones {
 				nomAutor = (String) sc.next();
 				System.out.println("añadir la duracion de la cancion");
 				durCancion = (int) sc.nextInt();
-				song.add(new Canciones(nomCancion, nomAutor, durCancion));
+				song.add(new Cancion(nomCancion, nomAutor, durCancion));
 				System.out.println("cancion añadida a la biblioteca");
 				break;
 
@@ -65,16 +65,16 @@ public class MenuCanciones {
 	}
 
 	private static void inicializarLista() {
-		song.add(new Canciones("ayer soñe", "benito kamelas", 3));
-		song.add(new Canciones("he decidido", "benito kamelas", 4));
-		song.add(new Canciones("fue mi abuelo", "benito kamelas", 5));
-		song.add(new Canciones("loko", "benito kamelas", 4));
-		song.add(new Canciones("pikolo", "benito kamelas", 3));
-		song.add(new Canciones("el rincon de mi cabeza", "benito kamelas", 4));
-		song.add(new Canciones("y no cambiamos ni un solo minuto", "benito kamelas", 5));
-		song.add(new Canciones("lola", "benito kamelas", 4));
-		song.add(new Canciones("sin trampa ni carton", "benito kamelas", 3));
-		song.add(new Canciones("corazon de luna", "benito kamelas", 4));
+		song.add(new Cancion("ayer soñe", "benito kamelas", 3));
+		song.add(new Cancion("he decidido", "benito kamelas", 4));
+		song.add(new Cancion("fue mi abuelo", "benito kamelas", 5));
+		song.add(new Cancion("loko", "benito kamelas", 4));
+		song.add(new Cancion("pikolo", "benito kamelas", 3));
+		song.add(new Cancion("el rincon de mi cabeza", "benito kamelas", 4));
+		song.add(new Cancion("y no cambiamos ni un solo minuto", "benito kamelas", 5));
+		song.add(new Cancion("lola", "benito kamelas", 4));
+		song.add(new Cancion("sin trampa ni carton", "benito kamelas", 3));
+		song.add(new Cancion("corazon de luna", "benito kamelas", 4));
 
 	}
 
