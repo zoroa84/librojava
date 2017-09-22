@@ -33,10 +33,6 @@ public class GuardarPersonasArraylist {
 			bw1 = new BufferedWriter(fw1);
 			fw2 = new FileWriter("data\\basura.txt");
 			bw2 = new BufferedWriter(fw2);
-		
-			
-			
-			
 			String lineas = "";
 		
 			while ((lineas = br.readLine()) != null) {
