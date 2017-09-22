@@ -13,6 +13,7 @@ public class Validaciones {
 	 * @param email a validar
 	 * @return true si es valido, false en caso contrario
 	 */
+	
 	public static boolean email(String email) {
 		boolean resul = false;
 		if ( email != null ) {
