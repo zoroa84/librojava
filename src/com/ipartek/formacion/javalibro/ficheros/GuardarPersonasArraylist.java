@@ -7,6 +7,9 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
+import com.ipartek.formacion.javalibro.pojo.Persona;
+import com.ipartek.formacion.javalibro.utilidades.Validaciones;
+
 
 public class GuardarPersonasArraylist {
 
@@ -19,8 +22,6 @@ public class GuardarPersonasArraylist {
 		FileWriter fw2 = null;
 		BufferedWriter bw1 = null;
 		BufferedWriter bw2 = null;
-		FileWriter fw3 = null;
-		BufferedWriter bw3 = null;
 		
 		int contBuenos = 0;
 		int contBasura = 0;
@@ -32,31 +33,21 @@ public class GuardarPersonasArraylist {
 			bw1 = new BufferedWriter(fw1);
 			fw2 = new FileWriter("data\\basura.txt");
 			bw2 = new BufferedWriter(fw2);
-			fw3 = new FileWriter("data\\basura.txt");
-			bw3 = new BufferedWriter(fw2);
+		
 			
 			
 			
 			String lineas = "";
-			
+		
 			while ((lineas = br.readLine()) != null) {
 				String[] partes = lineas.split(",");
 				System.out.println(lineas);
-				if (partes.length == 7) {
-					
-					if(Integer.parseInt("18") < Integer.parseInt(partes[3]) ) {
+				if (partes.length == 7 && Persona.MAYOR_EDAD <= Integer.parseInt(partes[3]) && Validaciones.dni(partes[5]) && Validaciones.email(partes[4]) ) {				
 					
 					// si es igual a 7 a bueno.txt	
 					bw1.write(lineas+"\r\n");
 					bw1.flush();
 					contBuenos++;
-					}else {
-						
-						bw3.write(partes+"\r\n");
-						bw3.flush();
-						contBasura++;
-					}
-
 				} else {
 					//si es basura aki
 					bw2.write(lineas+"\r\n");
